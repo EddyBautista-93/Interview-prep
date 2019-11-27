@@ -7,9 +7,37 @@
 <body>
 
 
-<h1>Interview Prep</h1>
+<!--<h1>Interview Prep</h1>-->
 
-<script src="js-questions.js"></script>
+<H2>RESPONSE DATA </H2>
+<div id="mon">
+    <div id="fom"></div>
 
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+
+<script>
+
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://8coupons.p.rapidapi.com/getstoredeals?chainID=55",
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "8coupons.p.rapidapi.com",
+            "x-rapidapi-key": "bdecd33faamsh57590d18918e026p1ba8bajsn8488dfca75c1"
+        }
+    }
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
+
+</script>
 </body>
 </html>
