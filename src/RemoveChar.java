@@ -4,7 +4,7 @@ public class RemoveChar {
 
     public static void main(String[] args) {
         String remove = "absjjjjd3";
-        String newRemove = remove.replace("j","");
+        String newRemove = remove.replace("d","");
 
         System.out.println(newRemove);
     }

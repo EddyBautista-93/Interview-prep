@@ -18,6 +18,6 @@ public class permutation {
 
 
     public static void main(String[] args) {
-        permutation("", "anc");
+        permutation("", "cdr32");
     }
 }
