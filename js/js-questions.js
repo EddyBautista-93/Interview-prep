@@ -1,6 +1,6 @@
 // test to see what category a person will land on.
 
-function openOrSenior(data){
+const openOrSenior = (data) =>{
     // create a empty variable to push the answer
     let results = [];
 
@@ -18,3 +18,24 @@ function openOrSenior(data){
 
 
 console.log(openOrSenior([[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]));
+
+
+// Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21
+const diff21 = (number) => {
+    let result;
+    if (number === 0) {
+        return 21;
+    } else if (number < 21) {
+        result = 21 - number;
+        return result;
+
+    } else if(number > 21) {
+        result = number - 21;
+        return result * 2;
+    }
+    return 0;
+};
+
+console.log(diff21(19));
+console.log(diff21(10));
+console.log(diff21(21));
